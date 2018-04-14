@@ -7,6 +7,8 @@ public class playerBehavior : MonoBehaviour {
     public int playerSpeed = 10;
     public bool facingRight = true;
     public float moveX;
+    public float moveY;
+    public bool isRunning;
 	
 	// Update is called once per frame
 	void Update () 
@@ -19,9 +21,17 @@ public class playerBehavior : MonoBehaviour {
     {
         // Controls
         moveX = Input.GetAxis("Horizontal");
+        moveY = gameObject.GetComponent<Rigidbody2D>().velocity.y;
 
         // Physics
-        gameObject.GetComponent<Rigidbody2D>().velocity = new Vector2(moveX * playerSpeed, gameObject.GetComponent<Rigidbody2D>().velocity.y);
+        checkRunning();
+
+        if (isRunning)
+            moveX *= playerSpeed; // Full speed
+        else
+            moveX *= playerSpeed * 0.5f; // 1/2 speed
+        
+        gameObject.GetComponent<Rigidbody2D>().velocity = new Vector2(moveX, moveY);
     }
 
     void turnAround()
@@ -44,4 +54,11 @@ public class playerBehavior : MonoBehaviour {
         transform.localScale = localScale;
     }
         
+    void checkRunning()
+    {
+        if (Input.GetAxis("Right Trigger") > 0)
+            isRunning = true;
+        else
+            isRunning = false;
+    }
 }
