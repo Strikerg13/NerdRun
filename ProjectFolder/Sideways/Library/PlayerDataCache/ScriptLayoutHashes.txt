@@ -1,6 +1,6 @@
 WindowsStandalone
 PlayerPath?
-C:/Users/Deric/Documents/Repos/NerdRun/Build/NerdRun.exe
+C:/Users/Deric/Documents/Repositories/NerdRun/Build/NerdRun.exe
 SceneListBegin?
 Assets/Scene1.unity
 SceneListEnd?
