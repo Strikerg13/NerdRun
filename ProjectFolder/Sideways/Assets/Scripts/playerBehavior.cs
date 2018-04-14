@@ -56,7 +56,7 @@ public class playerBehavior : MonoBehaviour {
         
     void checkRunning()
     {
-        if (Input.GetAxis("Right Trigger") > 0)
+        if ((Input.GetAxis("Right Trigger") > 0))// || Input.GetKey(KeyCode.LeftShift))
             isRunning = true;
         else
             isRunning = false;
