@@ -51,10 +51,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\fileBehavior.cs" />
      <Compile Include="Assets\Scripts\betterJump.cs" />
+     <Compile Include="Assets\Scripts\bitcoinController.cs" />
      <Compile Include="Assets\Scripts\cameraSystem.cs" />
      <Compile Include="Assets\Scripts\enemyBehavior.cs" />
+     <Compile Include="Assets\Scripts\equiationGravity.cs" />
+     <Compile Include="Assets\Scripts\fileBehavior.cs" />
      <Compile Include="Assets\Scripts\pauseGame.cs" />
      <Compile Include="Assets\Scripts\playerBehavior.cs" />
      <Compile Include="Assets\Scripts\playerHealth.cs" />

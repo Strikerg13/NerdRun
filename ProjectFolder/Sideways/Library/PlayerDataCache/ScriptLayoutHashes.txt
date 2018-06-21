@@ -1,6 +1,6 @@
 WindowsStandalone
 PlayerPath?
-C:/Users/Deric/Documents/Repositories/NerdRun/Build/NerdRun.exe
+C:/Users/Deric/OneDrive/Practice/Sideways/Build - Coin Get Son/NerdRun.exe
 SceneListBegin?
 Assets/Scene1.unity
 SceneListEnd?
@@ -132,7 +132,7 @@ e9bdabf9265d758d56f01bb188916fa8 UnityEngine.Networking.dll:UnityEngine.Networki
 3f32f08a64daf40b09ed864d96fe3840 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkTransform
 73843688b51256aed059f049c540bca8 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkTransformChild
 528ea1fd7c01796fc60c4e2f172ea229 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkTransformVisualizer
-a8b9d80429b80e9a85815c682730ea40 Assembly-CSharp.dll:.playerBehavior
+b79036d1f7774ef7fb60a29accec4405 Assembly-CSharp.dll:.playerBehavior
 dbfd0e26a78a0b2a53342c718bc7161f Assembly-CSharp.dll:.cameraSystem
 05524b8f659e7bfe5756d1335fec24ba UnityEngine.TestRunner.dll:UnityEngine.TestTools.TestRunner.Callbacks.PlayModeRunnerCallback
 96d0fbde9fd209878a0a291f82c9bcdd UnityEngine.TestRunner.dll:UnityEngine.TestTools.TestRunner.PlaymodeTestsController
@@ -155,3 +155,4 @@ c2275a8bfbb9f9942cad75ecdfded41d UnityEngine.HoloLens.dll:UnityEngine.XR.WSA.Spa
 ad0843dc5844295eb779e75691b6f0e1 Assembly-CSharp.dll:.playerHealth
 730301499f90ef42346d7c572a21a4fc Assembly-CSharp.dll:.powerupBehavior
 fcf277725396cd5f2271723a76f3b9c2 Assembly-CSharp.dll:.betterJump
+a62d4e43aeaddb974f45ba4f3001f50f Assembly-CSharp.dll:.bitcoinController

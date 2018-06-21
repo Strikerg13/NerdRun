@@ -4,11 +4,14 @@ using UnityEngine;
 
 public class playerBehavior : MonoBehaviour {
 
-    public int playerSpeed = 10;
+    public int runSpeed = 10;
+    public int walkSpeed = 5;
     public bool facingRight = true;
     public float moveX;
     public float moveY;
     public bool isRunning;
+    public Sprite walkSprite;
+    public Sprite runSprite;
 	
 	// Update is called once per frame
 	void Update () 
@@ -27,9 +30,15 @@ public class playerBehavior : MonoBehaviour {
         checkRunning();
 
         if (isRunning)
-            moveX *= playerSpeed; // Full speed
+        {
+            moveX *= runSpeed;
+            gameObject.GetComponent<SpriteRenderer>().sprite = runSprite;
+        }
         else
-            moveX *= playerSpeed * 0.5f; // 1/2 speed
+        {
+            moveX *= walkSpeed;
+            gameObject.GetComponent<SpriteRenderer>().sprite = walkSprite;
+        }
         
         gameObject.GetComponent<Rigidbody2D>().velocity = new Vector2(moveX, moveY);
     }
@@ -56,7 +65,7 @@ public class playerBehavior : MonoBehaviour {
         
     void checkRunning()
     {
-        if ((Input.GetAxis("Right Trigger") > 0))// || Input.GetKey(KeyCode.LeftShift))
+        if (Input.GetAxis("Run") > 0)
             isRunning = true;
         else
             isRunning = false;

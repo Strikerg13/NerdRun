@@ -6,7 +6,7 @@ public class powerupBehavior : MonoBehaviour {
 
     public int itemSpeed;
     public int xMoveDirection;
-    public GameObject player;
+    //public GameObject player;
 
     Transform itemTransform;
     float itemWidth;
@@ -75,19 +75,5 @@ public class powerupBehavior : MonoBehaviour {
         xMoveDirection = -1 * xMoveDirection;
     }
 
-    void OnCollisionEnter2D(Collision2D col)
-    {
-        if (col.gameObject.tag == "Player")
-        {
 
-            Destroy(this.gameObject);
-
-            // jump twice as high
-            player.GetComponent<betterJump>().jumpVelocity *= 1.5f;
-
-            // triggered cause gravity doesn't work like that!
-            col.gameObject.GetComponent<SpriteRenderer>().color = Color.red;
-
-        }
-    }
 }
