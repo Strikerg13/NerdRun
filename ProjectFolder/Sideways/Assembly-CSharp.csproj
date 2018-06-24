@@ -51,6 +51,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\persistentMusic.cs" />
      <Compile Include="Assets\Scripts\betterJump.cs" />
      <Compile Include="Assets\Scripts\bitcoinController.cs" />
      <Compile Include="Assets\Scripts\cameraSystem.cs" />
@@ -58,6 +59,8 @@
      <Compile Include="Assets\Scripts\equationFriction.cs" />
      <Compile Include="Assets\Scripts\equiationGravity.cs" />
      <Compile Include="Assets\Scripts\fileBehavior.cs" />
+     <Compile Include="Assets\Scripts\levelTransition.cs" />
+     <Compile Include="Assets\Scripts\objectRotate.cs" />
      <Compile Include="Assets\Scripts\pauseGame.cs" />
      <Compile Include="Assets\Scripts\playerBehavior.cs" />
      <Compile Include="Assets\Scripts\playerHealth.cs" />

@@ -50,7 +50,8 @@ public class playerHealth : MonoBehaviour {
 
     void Die () 
     {
-        SceneManager.LoadScene("Scene1");
+        string currentScene = SceneManager.GetActiveScene().name;
+        SceneManager.LoadScene(currentScene);
     }
 
     // Die if the player falls below the level.
