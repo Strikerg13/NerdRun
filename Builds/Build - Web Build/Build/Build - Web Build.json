@@ -1,0 +1,14 @@
+{
+"companyName": "DefaultCompany",
+"productName": "Sideways",
+"dataUrl": "Build - Web Build.data.unityweb",
+"asmCodeUrl": "Build - Web Build.asm.code.unityweb",
+"asmMemoryUrl": "Build - Web Build.asm.memory.unityweb",
+"asmFrameworkUrl": "Build - Web Build.asm.framework.unityweb",
+"TOTAL_MEMORY": 268435456,
+"graphicsAPI": ["WebGL 2.0", "WebGL 1.0"],
+"webglContextAttributes": {"preserveDrawingBuffer": false},
+"backgroundUrl": "Build - Web Build.jpg",
+"splashScreenStyle": "Dark",
+"backgroundColor": "#FFFFFF"
+}
