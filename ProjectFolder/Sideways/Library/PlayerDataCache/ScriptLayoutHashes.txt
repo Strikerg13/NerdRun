@@ -1,6 +1,6 @@
-WindowsStandalone
+WebGL
 PlayerPath?
-C:/Users/Deric/Documents/Repositories/NerdRun/Builds/Build - Level Exit/NerdRun.exe
+C:/Users/Deric/Documents/Repositories/NerdRun/Builds/Build - Web Build
 SceneListBegin?
 Assets/Scene1.unity
 Assets/Scene2.unity
