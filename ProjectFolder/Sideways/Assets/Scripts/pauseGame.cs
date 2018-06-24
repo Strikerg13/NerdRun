@@ -5,7 +5,12 @@ using UnityEngine;
 public class pauseGame : MonoBehaviour {
 
     public Transform PauseScreen;
-	
+
+    void Awake ()
+    {
+        highlightSelection();
+    }
+
 	// Update is called once per frame
 	void Update () 
     {
@@ -13,6 +18,8 @@ public class pauseGame : MonoBehaviour {
         {
             Pause();
 		}
+
+
 	}
 
     public void Pause()
@@ -39,5 +46,13 @@ public class pauseGame : MonoBehaviour {
     {
         print("Player has quit.");
         Application.Quit();
+    }
+
+    public void highlightSelection()
+    {
+        GameObject myEventSystem = GameObject.Find("EventSystem");
+        myEventSystem.GetComponent<UnityEngine.EventSystems.EventSystem>().SetSelectedGameObject(GameObject.Find("btnResume"));
+
+
     }
 }
