@@ -25,10 +25,6 @@ public class persistentMusic : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-//        if (SceneManager.GetActiveScene().name == "Scene1")
-//        {
-//            this.gameObject.GetComponent<AudioSource>().Stop();
-//            AudioBegin = false;
-//        }
+        
 	}
 }

@@ -65,6 +65,8 @@
      <Compile Include="Assets\Scripts\playerBehavior.cs" />
      <Compile Include="Assets\Scripts\playerHealth.cs" />
      <Compile Include="Assets\Scripts\powerupBehavior.cs" />
+     <Compile Include="Assets\selectionController.cs" />
+     <Compile Include="Assets\startMenuController.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
