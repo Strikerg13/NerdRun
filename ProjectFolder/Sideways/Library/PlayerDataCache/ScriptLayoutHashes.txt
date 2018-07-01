@@ -1,6 +1,6 @@
 WindowsStandalone
 PlayerPath?
-C:/Users/Deric/Documents/Repositories/NerdRun/Builds/Build - Start Menu Enhancements/NerdRun.exe
+C:/Users/Deric/Documents/Repositories/NerdRun/Builds/Build - Initial Start Menu Design/NerdRun.exe
 SceneListBegin?
 Assets/Scene1.unity
 Assets/Scene2.unity
