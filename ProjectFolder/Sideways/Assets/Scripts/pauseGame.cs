@@ -9,11 +9,9 @@ public class pauseGame : MonoBehaviour {
     public Transform PauseScreen;
     playerBehavior playerController;
 
-
     void Start()
     {
         playerController = GameObject.FindGameObjectWithTag("Player").GetComponent<playerBehavior>();
-
     }
 
 	// Update is called once per frame
