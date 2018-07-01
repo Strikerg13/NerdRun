@@ -1,16 +1,19 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class pauseGame : MonoBehaviour {
 
     public static bool GameIsPaused = false;
     public Transform PauseScreen;
-    public playerBehavior playerController;
+    playerBehavior playerController;
+
 
     void Start()
     {
         playerController = GameObject.FindGameObjectWithTag("Player").GetComponent<playerBehavior>();
+
     }
 
 	// Update is called once per frame
@@ -23,8 +26,6 @@ public class pauseGame : MonoBehaviour {
             else
                 Unpause();
 		}
-
-
 	}
 
     public void Pause()
@@ -37,6 +38,9 @@ public class pauseGame : MonoBehaviour {
 
         // show pause screen
         PauseScreen.gameObject.SetActive(true);
+
+        // highlight the button you want to start as selected
+        setFocusToFirstControl("UIInitialFocusControl", "UI2ndFocusControl");
 
         // let everyone know
         GameIsPaused = true;
@@ -61,5 +65,20 @@ public class pauseGame : MonoBehaviour {
     {
         print("Player has quit.");
         Application.Quit();
+    }
+
+    // trick to make the 1st button highlighted when the menu appears
+    public void setFocusToFirstControl(string firstControlsTag, string secondControlsTag)
+    {
+        Button btnSelect;       // The button we want to start out selected
+        Button btnDontSelect;   // The button we want to switch to and from
+
+        // find the controls
+        btnSelect = GameObject.FindGameObjectWithTag(firstControlsTag).GetComponent<Button>();
+        btnDontSelect = GameObject.FindGameObjectWithTag(secondControlsTag).GetComponent<Button>();
+
+        // cycle selection to make the Select button highlighted when the menu appears
+        btnDontSelect.Select();
+        btnSelect.Select();
     }
 }
