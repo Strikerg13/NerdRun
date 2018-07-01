@@ -6,6 +6,12 @@ public class pauseGame : MonoBehaviour {
 
     public static bool GameIsPaused = false;
     public Transform PauseScreen;
+    public playerBehavior playerController;
+
+    void Start()
+    {
+        playerController = GameObject.FindGameObjectWithTag("Player").GetComponent<playerBehavior>();
+    }
 
 	// Update is called once per frame
 	void Update () 
@@ -26,9 +32,13 @@ public class pauseGame : MonoBehaviour {
         // pause time
         Time.timeScale = 0;
 
+        // stop the player from moving
+        playerController.freezePlayer(true);
+
         // show pause screen
         PauseScreen.gameObject.SetActive(true);
 
+        // let everyone know
         GameIsPaused = true;
     }
 
@@ -40,6 +50,10 @@ public class pauseGame : MonoBehaviour {
         // hide pause screen
         PauseScreen.gameObject.SetActive(false);
 
+        // let the player move again
+        playerController.freezePlayer(false);
+
+        // let everyone know
         GameIsPaused = false;
     }
 
