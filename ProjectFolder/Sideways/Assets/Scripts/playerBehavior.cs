@@ -70,4 +70,19 @@ public class playerBehavior : MonoBehaviour {
         else
             isRunning = false;
     }
+
+    // Used to stop the player from moving
+    public void freezePlayer(bool freeze)
+    {
+        if (freeze)
+        {
+            this.enabled = false;
+            this.GetComponent<betterJump>().enabled = false;
+        }
+        else
+        {
+            this.enabled = true;
+            this.GetComponent<betterJump>().enabled = true;
+        }
+    }
 }
