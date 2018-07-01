@@ -77,12 +77,12 @@ public class playerBehavior : MonoBehaviour {
         if (freeze)
         {
             this.enabled = false;
-            this.enabled = false;
+            this.GetComponent<betterJump>().enabled = false;
         }
         else
         {
             this.enabled = true;
-            this.enabled = true;
+            this.GetComponent<betterJump>().enabled = true;
         }
     }
 }
