@@ -4,7 +4,12 @@ using UnityEngine;
 
 public class equationFriction : MonoBehaviour {
 
-    public GameObject player;
+    private GameObject player;
+
+    void Start()
+    {
+        player = GameObject.FindGameObjectWithTag("Player");
+    }
 
     void OnCollisionEnter2D(Collision2D col)
     {

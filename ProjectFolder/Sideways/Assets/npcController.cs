@@ -15,6 +15,8 @@ public class npcController : MonoBehaviour {
 	void Start () {
         Debug.Log("Hello, I'm an NPC");
 
+
+
         player = GameObject.FindGameObjectWithTag("Player");
         if (player != null)
         {
