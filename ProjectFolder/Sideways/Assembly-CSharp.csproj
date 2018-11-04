@@ -56,6 +56,9 @@
      <Compile Include="Assets\Scripts\betterJump.cs" />
      <Compile Include="Assets\Scripts\bitcoinController.cs" />
      <Compile Include="Assets\Scripts\cameraSystem.cs" />
+     <Compile Include="Assets\Scripts\DialogueScripts\dialogue.cs" />
+     <Compile Include="Assets\Scripts\DialogueScripts\dialogueManager.cs" />
+     <Compile Include="Assets\Scripts\DialogueScripts\dialogueTrigger.cs" />
      <Compile Include="Assets\Scripts\enemyBehavior.cs" />
      <Compile Include="Assets\Scripts\equationFriction.cs" />
      <Compile Include="Assets\Scripts\equiationGravity.cs" />
@@ -68,6 +71,9 @@
      <Compile Include="Assets\Scripts\playerBehavior.cs" />
      <Compile Include="Assets\Scripts\playerHealth.cs" />
      <Compile Include="Assets\Scripts\powerupBehavior.cs" />
+ <Reference Include="UnityEditor.StandardEvents">
+ <HintPath>C:/Users/Deric/Documents/Repositories/NerdRun/ProjectFolder/Sideways/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
+ </Reference>
  <Reference Include="Unity.TextMeshPro.Editor">
  <HintPath>C:/Users/Deric/Documents/Repositories/NerdRun/ProjectFolder/Sideways/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
  </Reference>
@@ -76,9 +82,6 @@
  </Reference>
  <Reference Include="Unity.TextMeshPro">
  <HintPath>C:/Users/Deric/Documents/Repositories/NerdRun/ProjectFolder/Sideways/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
- </Reference>
- <Reference Include="UnityEditor.StandardEvents">
- <HintPath>C:/Users/Deric/Documents/Repositories/NerdRun/ProjectFolder/Sideways/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.AIModule">
  <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
