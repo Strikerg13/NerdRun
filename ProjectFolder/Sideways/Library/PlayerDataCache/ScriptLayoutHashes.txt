@@ -1,6 +1,6 @@
 WindowsStandalone
 PlayerPath?
-C:/Users/Deric/Documents/Repos/NerdRun/Builds/Build - Start Menu Enhancements/Windows10Build/NerdRun.exe
+F:/NerdRun/NerdRun.exe
 SceneListBegin?
 Assets/Scene1.unity
 Assets/Scene2.unity
@@ -117,10 +117,11 @@ bc68edb0af574bf79f9550ead8ebae5c UnityEngine.HoloLens.dll:UnityEngine.Audio.Audi
 463516d5b5fe8e67a0a24c48f2095b04 UnityEngine.HoloLens.dll:UnityEngine.EventSystems.HoloLensInputModule
 c2275a8bfbb9f9942cad75ecdfded41d UnityEngine.HoloLens.dll:UnityEngine.XR.WSA.SpatialMappingCollider
 45f3431f0103c41611e8d4eec3d439df UnityEngine.HoloLens.dll:UnityEngine.XR.WSA.SpatialMappingRenderer
+90e41d7ea3861a48ae7f4e1eff3e225f Assembly-CSharp.dll:.npcController
 05524b8f659e7bfe5756d1335fec24ba UnityEngine.Advertisements.dll:UnityEngine.Advertisements.CallbackExecutor
 05524b8f659e7bfe5756d1335fec24ba UnityEngine.Advertisements.dll:UnityEngine.Advertisements.Editor.Placeholder
 70a6a76f91aec6459505dc803e7e0b8d Assembly-CSharp.dll:.fileBehavior
-2b5bd81c259c691324a17af9a3e97e85 Assembly-CSharp.dll:.equationFriction
+05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.equationFriction
 fc1e0f4d8439d9928083474691511a13 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkAnimator
 05524b8f659e7bfe5756d1335fec24ba UnityEngine.Networking.dll:UnityEngine.Networking.NetworkBehaviour
 60b2bb652410a5867a5ab9a01cd38461 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkDiscovery
